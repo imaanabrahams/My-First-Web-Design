@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - GlowRoots</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+      body {
+        font-family: Times New Roman, sans-serif
+      }
+
+      :root {
+        --brand-green: #2d5a27;
+        --brand-hover: #1e3d1a;
+      }
+
+      .product-img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        background-color: #f8f9fa;
+      }
+
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .btn-success {
+        background-color: var(--brand-green);
+        border: none;
+        font-weight: 600;
+        padding: 10px;
+      }
+
+      .btn-success:hover {
+        background-color: var(--brand-hover);
+      }
+      
+      .price-tag {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--brand-green);
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">GlowRoots</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <h1 class="text-center mb-2 animate__animated animate__fadeInDown fw-bold">Our Collection:</h1>
+      <p class="text-center text-muted mb-5 animate__animated animate__fadeIn">Scientifically formulated, naturally rooted.</p>
+
+      <div class="row g-4">
+        <!-- 1. Hair Growth Oil -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp">
+            <a href="https://ibb.co/SX60zV8B"><img src="https://i.ibb.co/Kj57JVkW/bc9e5402d814a4cae617bacfda002575.jpg" alt="bc9e5402d814a4cae617bacfda002575" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Hair Growth Oil</h5>
+              <p class="price-tag mb-3">R199</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Rosemary Shampoo -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+            <a href="https://ibb.co/1fVrhWmM"><img src="https://i.ibb.co/0jNC8bGK/e02eba892a4d47fdef154ec22deccaf1.jpg" alt="e02eba892a4d47fdef154ec22deccaf1" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Rosemary Shampoo</h5>
+              <p class="price-tag mb-3">R150</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Scalp Serum -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/DDkPx9b8/d080ce60b40dfba204bf8cd356f08ffa.jpg" alt="d080ce60b40dfba204bf8cd356f08ffa" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Scalp Serum</h5>
+              <p class="price-tag mb-3">R220</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Hair Vitamins -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+            <a href="https://ibb.co/xqWPh14N"><img src="https://i.ibb.co/5hmtTr7P/ad3d4dd136d207ad3184035b8263cb55.jpg" alt="ad3d4dd136d207ad3184035b8263cb55" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Hair Vitamins</h5>
+              <p class="price-tag mb-3">R180</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Edge Growth Gel -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <a href="https://ibb.co/HD3KnCc7"><img src="https://i.ibb.co/gMhrzd0y/31bd6a472c0766bb8a6b038e41d9a2e5.jpg" alt="31bd6a472c0766bb8a6b038e41d9a2e5" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Edge Growth Gel</h5>
+              <p class="price-tag mb-3">R120</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Deep Conditioner -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+            <a href="https://ibb.co/YFr4bCqH"><img src="https://i.ibb.co/PvSstLfq/d3772c20635049f84d4e4e73cf708da3.jpg" alt="d3772c20635049f84d4e4e73cf708da3" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Deep Conditioner</h5>
+              <p class="price-tag mb-3">R160</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Hair Mist -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+            <a href="https://ibb.co/qYYsHfNv"><img src="https://i.ibb.co/YBBk5Mcx/ace54365b5aed916de914ce706600b95.jpg" alt="ace54365b5aed916de914ce706600b95" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Hair Mist</h5>
+              <p class="price-tag mb-3">R130</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Silk Bonnet -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.7s;">
+            <a href="https://ibb.co/hRSkVy31"><img src="https://i.ibb.co/6Rk2FmjJ/a0473baf889cade9770d3841ee839904-1.jpg" alt="a0473baf889cade9770d3841ee839904-1" border="0"></a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title h6">Silk Bonnet</h5>
+              <p class="price-tag mb-3">R90</p>
+              <button class="btn btn-success mt-auto w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+      <p class="mb-0 small">© 2026 GlowRoots Hair Growth • Naturally Derived</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
